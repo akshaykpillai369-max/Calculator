@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <script src="script.js"></script>
+</head>
+<body>
+
+  <div class="screen">
+  
+    <main>
+
+      <section class="output-area">
+        <input type="text" id = "display-screen">
+      </section>
+
+  
+      <div class="input-area">
+        <!-- Row 1 -->
+        <button onclick="clearScreen()" style="background-color: red;">AC</button>
+        <button onclick="press('()')" style="background-color: orange;">()</button>
+        <button onclick="press('%')" style="background-color: orange;">%</button>
+        <button onclick="press('/')" style="background-color: orange;">÷</button>
+        
+        <!-- Row 2 -->
+        <button onclick="press('7')" style="background-color: blue;">7</button>
+        <button onclick="press('8')" style="background-color: blue;">8</button>
+        <button onclick="press('9')" style="background-color: blue;">9</button>
+        <button onclick="press('*')" style="background-color: orange;">×</button>
+        
+        <!-- Row 3 -->
+        <button onclick="press('4')" style="background-color: green;">4</button>
+        <button onclick="press('5')" style="background-color: green;">5</button>
+        <button onclick="press('6')" style="background-color: green;">6</button>
+        <button onclick="press('-')" style="background-color: orange;">-</button>
+        
+        <!-- Row 4 -->
+        <button onclick="press('1')" style="background-color: grey;">1</button>
+        <button onclick="press('2')" style="background-color: grey;">2</button>
+        <button onclick="press('3')" style="background-color: grey;">3</button>
+        <button onclick="press('+')" style="background-color: orange;">+</button>
+        
+        <!-- Row 5 -->
+        <button onclick="press('0')" style="background-color: grey;">0</button>
+        <button onclick="press('.')" style="background-color: red;">.</button>
+        <button onclick="backspace()" style="background-color: red;">⌫</button>
+        <button onclick="calculate()" style="background-color: orange;">=</button>
+      </div>
+    </main>
+
+
+    <p style="color: grey;">Made By Akshay</p>
+  </div>
+
+</body>
+</html>
